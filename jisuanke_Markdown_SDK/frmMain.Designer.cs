@@ -36,6 +36,9 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCode = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEditor
@@ -45,19 +48,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEditor.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtEditor.Location = new System.Drawing.Point(12, 100);
+            this.txtEditor.Location = new System.Drawing.Point(24, 147);
+            this.txtEditor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtEditor.Multiline = true;
             this.txtEditor.Name = "txtEditor";
             this.txtEditor.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEditor.Size = new System.Drawing.Size(888, 440);
+            this.txtEditor.Size = new System.Drawing.Size(1286, 451);
             this.txtEditor.TabIndex = 0;
             // 
             // btnOpen
             // 
             this.btnOpen.AutoSize = true;
-            this.btnOpen.Location = new System.Drawing.Point(23, 12);
+            this.btnOpen.Location = new System.Drawing.Point(46, 24);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(67, 42);
+            this.btnOpen.Size = new System.Drawing.Size(134, 84);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "打开";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -66,9 +71,10 @@
             // btnSave
             // 
             this.btnSave.AutoSize = true;
-            this.btnSave.Location = new System.Drawing.Point(127, 12);
+            this.btnSave.Location = new System.Drawing.Point(220, 24);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(67, 42);
+            this.btnSave.Size = new System.Drawing.Size(134, 84);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -76,10 +82,12 @@
             // 
             // btnRead
             // 
+            this.btnRead.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRead.AutoSize = true;
-            this.btnRead.Location = new System.Drawing.Point(619, 12);
+            this.btnRead.Location = new System.Drawing.Point(1100, 37);
+            this.btnRead.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(75, 42);
+            this.btnRead.Size = new System.Drawing.Size(150, 84);
             this.btnRead.TabIndex = 3;
             this.btnRead.Text = "添加阅读课";
             this.btnRead.UseVisualStyleBackColor = true;
@@ -96,9 +104,10 @@
             // btnUpdate
             // 
             this.btnUpdate.AutoSize = true;
-            this.btnUpdate.Location = new System.Drawing.Point(242, 12);
+            this.btnUpdate.Location = new System.Drawing.Point(386, 24);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(67, 42);
+            this.btnUpdate.Size = new System.Drawing.Size(134, 84);
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "更新";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -106,26 +115,63 @@
             // 
             // btnCode
             // 
+            this.btnCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCode.AutoSize = true;
-            this.btnCode.Location = new System.Drawing.Point(476, 12);
+            this.btnCode.Location = new System.Drawing.Point(904, 37);
+            this.btnCode.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCode.Name = "btnCode";
-            this.btnCode.Size = new System.Drawing.Size(75, 42);
+            this.btnCode.Size = new System.Drawing.Size(150, 84);
             this.btnCode.TabIndex = 5;
             this.btnCode.Text = "添加代码课";
             this.btnCode.UseVisualStyleBackColor = true;
             this.btnCode.Click += new System.EventHandler(this.btnCode_Click);
             // 
+            // btnNew
+            // 
+            this.btnNew.AutoSize = true;
+            this.btnNew.Location = new System.Drawing.Point(548, 24);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(134, 84);
+            this.btnNew.TabIndex = 6;
+            this.btnNew.Text = "新建";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(42, 1122);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 24);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Version 0.3Alpha";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 636);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(214, 24);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Version 0.3 Alpha";
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 582);
+            this.ClientSize = new System.Drawing.Size(1338, 680);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.txtEditor);
             this.Controls.Add(this.btnCode);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnRead);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnOpen);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmMain";
             this.Text = "Jisuanke Markdown Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
@@ -145,6 +191,9 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnCode;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

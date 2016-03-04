@@ -23,10 +23,10 @@ namespace jisuanke_Markdown_SDK
         {
             update.text += ("# " + txtTitle.Text);
             update.text += Environment.NewLine;
-            update.text += "---";
-            update.text += Environment.NewLine;
             update.text += ("- " + txtTag.Text);
             update.text += Environment.NewLine;
+            txtTitle.Text = "已更新标题";
+            txtTag.Text = "已更新tag";
         }
         private void btnTitle_Click(object sender, EventArgs e)
         {
@@ -61,7 +61,7 @@ namespace jisuanke_Markdown_SDK
                 update.text += Environment.NewLine;
                 update.text += "#### 提示";
                 update.text += Environment.NewLine;
-                update.text += txtTag.Text;
+                update.text += txtTips.Text;
                 update.text += Environment.NewLine;
                 update.text += "#### 代码";
                 update.text += Environment.NewLine;
@@ -87,6 +87,35 @@ namespace jisuanke_Markdown_SDK
         private void btnCode_Click(object sender, EventArgs e)
         {
             updateCode();
+        }
+
+        private void txtCode_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Modifiers == Keys.Control && e.KeyCode == Keys.A)
+            {
+                ((TextBox)sender).SelectAll();
+            }
+        }
+
+        private void txtGuide_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Modifiers == Keys.Control && e.KeyCode == Keys.A)
+            {
+                ((TextBox)sender).SelectAll();
+            }
+        }
+
+        private void txtTips_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Modifiers == Keys.Control && e.KeyCode == Keys.A)
+            {
+                ((TextBox)sender).SelectAll();
+            }
+        }
+
+        private void txtCode_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
