@@ -162,5 +162,10 @@ namespace jisuanke_Markdown_SDK
             Text = "Untitled -jisuanke Markdown Editor";
             New();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
